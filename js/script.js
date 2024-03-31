@@ -1,29 +1,45 @@
 "use strict";
 
 
-const numberOfFilms = +prompt("How many movies had you already wathed?", "");
+for(let i = 5; i <= 10; i++){
+	console.log(i);
+}
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {
+for( let i = 20; i >= 10; i--){
+	if( i === 13) {
+		break;
+	}
+}
 
-	},
-	actors: {
+for( let i = 20; i >= 10; i--){
+	if( i === 13) {
+		break;
+	}
+	console.log(i);
+}
 
-	},
-	genres: [
+for (let i = 2; i < 11 ; i++){
+	if( i % 2 === 1) {
+		continue;
+	}
+	console.log(i);
+}
 
-	],
-	privat: false
-    
-};
+for (let i = 2; i <= 16; i++) {
+	if (i % 2 === 0) {
+		continue;
+	} else {
+		console.log(i);
+	}
+}
 
-const question = prompt("Один из просмотренных фильмов?", ""),
-	  questionTwo = prompt("На сколько его оцените?", ""),
-	  questionThre = prompt("Один из просмотренных фильмов?", ""),
-	  questionFour = prompt("На сколько его оцените?", "");
+let num = 2;
 
-personalMovieDB.movies[question] = questionTwo;
-personalMovieDB.movies[questionThre] = questionFour;
-
-console.log(personalMovieDB);
+while ( num < 16) {
+	num++;
+	if (num % 2 === 0) {
+		continue;
+	} else {
+		console.log(num);
+	}
+}
